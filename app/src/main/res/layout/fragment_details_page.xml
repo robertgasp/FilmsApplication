@@ -5,8 +5,8 @@
     android:id="@+id/details_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_marginBottom="@dimen/details_fragment_margin_bottom"
+    android:orientation="vertical"
     tools:context=".ui.view.DetailsPageFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -41,8 +41,8 @@
             android:id="@+id/year"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/title_description_text_size"
             android:gravity="center"
+            android:textSize="@dimen/title_description_text_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cover"
             app:layout_constraintTop_toBottomOf="@+id/title"
@@ -77,7 +77,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/layout_margin_16"
-        app:layout_constraintBottom_toTopOf="@id/data_of_last_watching"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title_of_description"
         tools:ignore="MissingConstraints">
 
@@ -93,17 +95,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/save_comments" />
+        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/save_comments"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/comments_field"
-        android:layout_margin="4dp"
-        android:text="@string/save_comment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/errorTextView"
