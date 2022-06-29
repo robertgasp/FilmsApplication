@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">FilmsApplication</string>
+    <string name="actual_text">Актуальное</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="actual">Актуальное</string>
+    <string name="Error_rus">Ошибка</string>
+    <string name="movie_name">{movie}</string>
+    <string name="tab_name_actual">Актуальное</string>
+
 </resources>
